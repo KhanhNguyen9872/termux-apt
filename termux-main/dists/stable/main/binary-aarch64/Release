@@ -1,0 +1,6 @@
+Origin: termux-main stable
+Label: termux-main stable
+Archive: stable
+Suite: stable
+Architecture: aarch64
+Component: main

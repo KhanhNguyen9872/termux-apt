@@ -1,0 +1,6 @@
+Origin: termux-main stable
+Label: termux-main stable
+Archive: stable
+Suite: stable
+Architecture: i686
+Component: main
