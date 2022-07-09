@@ -49,10 +49,10 @@ Version: 4.5.1
 Depends: python
 Filename: pool/main/2/2ping/2ping_4.5.1_all.deb
 Size: 60620
-MD5sum: 315d86f7187dc5ef486fa55beac6e122
-SHA1: 69aa6632d44d154592ee725d396d2df1fb2b59a0
-SHA256: 556775c2464b891333a37d03fbee315469965e9909d3c01909927a9ef5146426
-SHA512: 4e0e0e40acb538fd14aafcdbc17e24009106126d96c55f3819188a2c92d35789969aff838fe60efe7c2e3e822ba925a54805548fbac3973bb22d0ab33556a11b
+MD5sum: 8f4932e41dec862cdbbcb5a78d777696
+SHA1: 5f9229cacb2cd9c7024fb86047fa0446fcf19251
+SHA256: 2a7864fd7360c0acbfe46719756127c7a4f6fad2eb87d40d1d6229b013d9de13
+SHA512: 2f96d2ad33fd978fca99b81405e0639e23820f727331950c8a60fc9ed1b401425ea1676efee6ad861cce0e5ff828f14cd147546278a6956b6e2c419862f8fdb3
 Description: A bi-directional ping utility
 Homepage: https://www.finnie.org/software/2ping/
 
@@ -1532,6 +1532,24 @@ SHA512: 2dabb42cb62d29924f174c5046e055bfa99a7928296fe984e36906da534f7d81bcf61ab4
 Description: Use llvm as binutils
 Homepage: https://github.com/trentbuck/binutils-is-llvm
 
+Package: binutils-is-llvm
+Installed-Size: 48
+Maintainer: @termux
+Architecture: all
+Version: 0.1
+Replaces: binutils
+Provides: binutils
+Depends: lld, llvm
+Conflicts: binutils
+Filename: pool/main/b/binutils-is-llvm/binutils-is-llvm_0.1_all.deb
+Size: 1808
+MD5sum: cf4aed05738399ab64ac9f3dc83f9f3c
+SHA1: 0c34f5ba5d26f72edaf556736132510b47010d20
+SHA256: 2db66affe2248a4444180a86a0a2f8f40e40dff6fb9ab9bcbb0c21844cff1ae9
+SHA512: ca20d6e9d5a7f7b101e63265b315763114cd64807038c876e2853e28a0bb36043375f20eb60eeda6c674ff75630b5e5839eb7d286300139fb5fd73822b26ef84
+Description: Use llvm as binutils
+Homepage: https://github.com/trentbuck/binutils-is-llvm
+
 Package: bison
 Installed-Size: 2500
 Maintainer: @termux
@@ -2294,11 +2312,11 @@ Maintainer: @termux
 Architecture: arm
 Version: 2.7.0
 Filename: pool/main/c/catimg/catimg_2.7.0_arm.deb
-Size: 35240
-MD5sum: 36e496e05b1cf49766b7af6afc6c3d0d
-SHA1: 77e3472c989ab13ea657b6b35524fdefb97b81ea
-SHA256: 3b0ba240da1f7f80aad2751d9c6e1bb348b8dc49d761292cad6568031145e896
-SHA512: 30123ea5aacaf2d5be176159a3303107fb878be474dc017f4781449b918858285cab7adfeaac06bf102f5405f95c59bdbb030969b8e33a4a6f360cc35d39b316
+Size: 35268
+MD5sum: 3521f610c3acf8b8aa0595be6a7407ee
+SHA1: 5a51408b6818b34ba7c7a72a958113381b07e645
+SHA256: 0849428b9bc4bd3cfd9fdb6e2838d850440e70487b3c7483cb2d5c84753e2b32
+SHA512: 2bbe133514fcde72624f663000d6f3a6f339aa4cb71eb2e9b3c5fcc0d11d54f48e607c541e8649fd8fee1b6d66698b066ff5c87fb8f32e080146d90424eeed6d
 Description: Renders images in the terminal
 Homepage: https://posva.net/shell/retro/bash/2013/05/27/catimg
 
@@ -2750,6 +2768,20 @@ SHA512: 524a617468f4a40f1e993b53238f90790dab5ed005e6107f810774ba55f4f0fdeccef8dc
 Description: A rule-based tunnel in Go.
 Homepage: https://github.com/Dreamacro/clash
 
+Package: clash
+Installed-Size: 8912
+Maintainer: Philipp Schmitt <philipp@schmitt.co>
+Architecture: arm
+Version: 1.11.0
+Filename: pool/main/c/clash/clash_1.11.0_arm.deb
+Size: 2512848
+MD5sum: c4d7531344072a91ffd4c0b0a375b97b
+SHA1: 0783b674288c5ea4f6fca2ffc0ab4462ded42f94
+SHA256: e308182117f5ce5ee3d1ff858d04d31021f229ccad87ef2a3bdf54c273a903ed
+SHA512: e58e7209cf7b419dd306127a51cd3bea08eeb6f87795f5bec49b31813c0f9459efce6c9fb58f05903bfbf1b31809af2f4342c1990232ed9c132f196c35ff0b36
+Description: A rule-based tunnel in Go.
+Homepage: https://github.com/Dreamacro/clash
+
 Package: cliaoke
 Installed-Size: 4660
 Maintainer: @termux
@@ -2805,6 +2837,20 @@ MD5sum: ed5db9c016326d6f4f52dd798bfee0de
 SHA1: 3063629cf7667f78a32875c89f8b03474263157a
 SHA256: e1e519777aee056781d6fd04714b89944c9874162bcd6d2c5d0cfae98febc1ad
 SHA512: 85514d77962fa77a97a3c30f3de9b3539f5b8562c9847b3c76be420bb98fef24e0ed98e3ed2b80fbe9a49bdda1f8bcff12d5e116ba930fe8cabf0ffe64efd4c9
+Description: A tunneling daemon that proxies traffic from the Cloudflare network to your origins
+Homepage: https://github.com/cloudflare/cloudflared
+
+Package: cloudflared
+Installed-Size: 22440
+Maintainer: @termux
+Architecture: arm
+Version: 2022.7.0
+Filename: pool/main/c/cloudflared/cloudflared_2022.7.0_arm.deb
+Size: 5769620
+MD5sum: ad0b3b9e041eef073426d91fcdaab19f
+SHA1: 75e5f56d9fa038ad2c457f4b6279d1a4dd7f9906
+SHA256: c6f29d52177718d2310459135e1a77f9d25590a3096df39d366ab38e636e0038
+SHA512: 5ce5d6f27b70836b435fd840e1f5d5b942132dd587e172d5a7c2b52f0e95d7b41176f58a4f0ac5db663a8a4d4f3549b1e58fa324084165d603f5620deb2325dd
 Description: A tunneling daemon that proxies traffic from the Cloudflare network to your origins
 Homepage: https://github.com/cloudflare/cloudflared
 
@@ -3020,6 +3066,20 @@ SHA512: 93c566d7d6c19df1861e1704e3b3cea4405a34a39a3b1e69e48e4c138e06f373385ed50d
 Description: Suggest installation of packages in interactive shell sessions
 Homepage: https://github.com/termux/command-not-found
 
+Package: command-not-found
+Installed-Size: 500
+Maintainer: @termux
+Architecture: arm
+Version: 2.0
+Filename: pool/main/c/command-not-found/command-not-found_2.0_arm.deb
+Size: 219112
+MD5sum: 883a186a965c6c384e4b393f6eab4bdd
+SHA1: 780dc399a6a746ab22857d513394af12d60071e4
+SHA256: bfa2e267a53b069b2a7cd72ae13ac365b1e9dc47225a19f0ca2d7e7fbf6b71c2
+SHA512: b41c8889266e9050fca8a2c40b193ecf09f55f7f2b036454744f9d4a093e86f1bac2df5ca6c329a629ad49656c992cfbb9c893138d7e668aa14ca2e68546ee10
+Description: Suggest installation of packages in interactive shell sessions
+Homepage: https://github.com/termux/command-not-found
+
 Package: composer
 Installed-Size: 2252
 Maintainer: @PuneetGopinath
@@ -3195,6 +3255,20 @@ MD5sum: 864d7c79b871c5ff159b360afc0221d4
 SHA1: 1707026e29e73606bbdb8b8b38eff72bc80237d6
 SHA256: 06e0631272160d407f98081a13d524be35059ed45663c848fdb04f690cb6d876
 SHA512: 06670228228eea1d5fb0957e19c41c143bf30da453a530f7759868ed85311966712621323cce15a4d0d2fda4e1998cd5c5f89947c03887435f2894f0db492bdc
+Description: Easily and securely send things from one computer to another.
+Homepage: https://github.com/schollz/croc
+
+Package: croc
+Installed-Size: 5788
+Maintainer: @termux
+Architecture: arm
+Version: 9.5.6
+Filename: pool/main/c/croc/croc_9.5.6_arm.deb
+Size: 1686020
+MD5sum: ee38e1e1e7cc9d6af8e6d3773e337f88
+SHA1: 9559b934086d5c66a9c523068ca00a9fd2b22464
+SHA256: 6baaee607ab23d81822cbf9506f5583f260c3d12585b5bbd7fba32f4bfde6b6a
+SHA512: 6c15888625a36bb21b38402608e029b40be5dad69dfca49eea01d4b909abd5206703c9500b245b6f6bea096f8c8525eef177d158b57ab3860243715a197190dd
 Description: Easily and securely send things from one computer to another.
 Homepage: https://github.com/schollz/croc
 
@@ -5829,6 +5903,21 @@ SHA512: 178d248c78b2129029b5fe7d9b464e9dfb1d343de33a9dcd6e0cf27f800970d4e203463a
 Description: Command-line fuzzy finder
 Homepage: https://github.com/junegunn/fzf
 
+Package: fzf
+Installed-Size: 2560
+Maintainer: @termux
+Architecture: arm
+Version: 0.30.0
+Depends: bash, findutils
+Filename: pool/main/f/fzf/fzf_0.30.0_arm.deb
+Size: 803792
+MD5sum: d1d90ad5f168d2a7226aa7b0df9c5bd7
+SHA1: 59dfbad46791730d7ae549c7e68c1ee0b8688e17
+SHA256: 12728aae5cbfa89f655bd12de4255cc1f2d33541ddc64b50274e457fd8adbc40
+SHA512: 80435bba0b817f4b2f2bad8a0d02e548694265c8b9667a58e99460b350dc38305a92ba8ee5ae3513593ff9225c12f321b268af4f38d83782bc014d66b278e194
+Description: Command-line fuzzy finder
+Homepage: https://github.com/junegunn/fzf
+
 Package: fzy
 Installed-Size: 88
 Maintainer: Krishna Kanhaiya @kcubeterm
@@ -7207,11 +7296,11 @@ Architecture: arm
 Version: 0.2.4
 Depends: libolm
 Filename: pool/main/g/gomuks/gomuks_0.2.4_arm.deb
-Size: 4841996
-MD5sum: a308467e935183fdaaf59f297a4b8a25
-SHA1: 99f0b2f62a0380362a371c2ff560b23e701b7644
-SHA256: 8e2cb2e1372e1ff2144a646b1c15984b9b242eb88fc76229da35b090c65f53b2
-SHA512: a09b45a35a7aa253d20f6a64cca95b7a3eaeeceeb93557097b6df1c767896bfda3f806c9820418ab3ce324b763c78cbc33b32957d1782eae16a6c614c551ed8a
+Size: 4842620
+MD5sum: 5736c30399ba5c3dc4a86275422cacac
+SHA1: dd7d40ff3546d8be1667c88588b99f868502cf2e
+SHA256: 2c9fda7b47faf5c72cdcb206d8b95600cd658071cbb6ff8f3d1326feed438cd3
+SHA512: c6d48a6870c80643e15bd530b1df1d92479b6d057dbac035dd068ef46f952ca92227e35bcac8aafdc25961199549a7b475e4c780a566873a5938c90ad06f53d8
 Description: A terminal Matrix client written in Go
 Homepage: https://maunium.net/go/gomuks/
 
@@ -9172,10 +9261,10 @@ Version: 1.3
 Depends: bash
 Filename: pool/main/h/hr/hr_1.3_all.deb
 Size: 2916
-MD5sum: 833508af568e4f6b27ef00f6897f9f7d
-SHA1: 7b4c1f74f10db0ab0d169594339822530097379b
-SHA256: bfb2b7f258da81fa30fe56dee13e0fa8d0e28a8dfc9581f04c6f86490c64fdd6
-SHA512: bea875e690efc00a4e7542327b307b8926c5158838b8dd97995550945c5f6f08c0c84c045d966d0b8365ffef741bd059066c0de897f6bb1e240ae431081c1fad
+MD5sum: d430f4649d896e57c33e4520d7aeafb1
+SHA1: 68f6000843aefc6e62422e92e1a50a2466e05d3b
+SHA256: a70b61d56f9b42e6728d634d434e4a95d1d22acee9df0f5aff22a72d12c71436
+SHA512: 9e14cc7362043c4f9d4b4493532ac9e1cef1d10c06891a7f72acc1c3c17b3916d202d10215a1b5f258154e9a4cdabfe6eabbd28073d7e10d1f929f5154822229
 Description: A horizontal ruler for your terminal
 Homepage: https://github.com/LuRsT/hr
 
@@ -9430,11 +9519,11 @@ Maintainer: @termux
 Architecture: arm
 Version: 0.1.0
 Filename: pool/main/h/hut/hut_0.1.0_arm.deb
-Size: 2029144
-MD5sum: 1ccca21709ea2f0a9737fe94525c3fd8
-SHA1: 6365e5c09206667107954edff1d76ba93ab6b87c
-SHA256: 8a91bed3fc2ae6bbcfeb923302c35cde542fdcde92602ce1bd1fe3597bffdc4d
-SHA512: 06be1b24fb59d304fcb3b88851ffa88b26451e24c480d55c6b9c9406a1ce91378535e95763ec32317184f8f3106e11ca26c8de60786cc2bb9650450f83ae12fb
+Size: 2028788
+MD5sum: c363d04c42117d557d42a86ae9eb4c01
+SHA1: c0a09faf051742e18397fb3088a67eccca8d09a6
+SHA256: 7c0e2c2d460d3f0d3b57b718ef71653d428597bdca5ea8254fa150101f099768
+SHA512: e87d7f194f66dab7f4a95d44fa813c08720e1f31c13442714d27a6d8fbd0ec3f6557f14824f73acf1e0e2506dc06e2ca8f617f31e6076a09b90aca0795f6b589
 Description: A CLI tool for sr.ht
 Homepage: https://git.sr.ht/~emersion/hut
 
@@ -9890,6 +9979,21 @@ SHA512: d28969f8e8dc5b7110fdafd4eee081bf86748a7fdc8783e88a2ad435be72c05397446b2c
 Description: A peer-to-peer hypermedia distribution protocol
 Homepage: https://ipfs.io/
 
+Package: ipfs
+Installed-Size: 55288
+Maintainer: @termux
+Architecture: arm
+Version: 0.13.0
+Suggests: termux-services
+Filename: pool/main/i/ipfs/ipfs_0.13.0_arm.deb
+Size: 14023328
+MD5sum: e2b13037f26f83ae1bff3757db010099
+SHA1: 6381bd6379fe0838721e7c2a38dba829969e465f
+SHA256: 3647941e2ba4b12e00d3b1a0450044c5654f1797118575a62f53e9f706949a76
+SHA512: 1baa28afd742531d86d4d8a9c7834160fb0bb936d021de14581b08f03a37310b3c7144d5cd4de01ecb78f510b0917068eed8bff14efcf5a412d12b97138de796
+Description: A peer-to-peer hypermedia distribution protocol
+Homepage: https://ipfs.io/
+
 Package: ipmitool
 Installed-Size: 1096
 Maintainer: @termux
@@ -10164,6 +10268,20 @@ SHA512: b2cba8bb720bec985e0abec7b7f276f29f5a89a1604525f325a8faba4e2ecf698005797c
 Description: A CLI for JFrog products.
 Homepage: https://jfrog.com/getcli
 
+Package: jfrog-cli
+Installed-Size: 20696
+Maintainer: @termux
+Architecture: arm
+Version: 2.20.0
+Filename: pool/main/j/jfrog-cli/jfrog-cli_2.20.0_arm.deb
+Size: 5532256
+MD5sum: 0b56f169af39135cdc2ee29bbbf6e350
+SHA1: 3ed9e5946f1c51b96e44891ff9556754ba8cb1d6
+SHA256: 99354e269511b27442b214570d750d263dddb9c5edec03ea12f3613a88f67029
+SHA512: 2bcaab6798f4894f2386408941f6cdacebc18f3ecd59c8440fdff663374b24c9184d4dd5d80f24176e6c7ae62c9237af6dc56fa1ad4c91faec4b8515eb815313
+Description: A CLI for JFrog products.
+Homepage: https://jfrog.com/getcli
+
 Package: jftui
 Installed-Size: 176
 Maintainer: Maxr1998 <max.rumpf1998@gmail.com>
@@ -10171,11 +10289,11 @@ Architecture: arm
 Version: 0.5.2
 Depends: libcurl, yajl, mpv
 Filename: pool/main/j/jftui/jftui_0.5.2_arm.deb
-Size: 45260
-MD5sum: f096c57a5e13c2a7826e48d3aba4473c
-SHA1: 18ecdae50c2935d6ba300fbb52d1635be97aaf81
-SHA256: f2d805f7b40212e5e6a541db6bb5d653ff673aac3cd5ff26de3c9ee99f69b371
-SHA512: 1f50399919fd65d75c425c62a9279b42abf509de3b40c19d1ffa7f334327b420a293dce5c06883227d4d8479fc4937ad462dec1f7063a33e9144ca076456461d
+Size: 45252
+MD5sum: b66e497e847ca64c297f9680900bc632
+SHA1: 3af712bada17dc1421b251a6ff2ccda22be080f3
+SHA256: b2da1b1809ab4f82d1dea5c4f9e439d20431f32a1da0cb98be437e3e4d6c58d6
+SHA512: 96dedb2c73dfc58676afaf9669b6d9dee2fcf2fe6994b16568ca326563d0c72e4bb719ed5c615acc0eeeecfdfd9699a2780cd8a6b0275d331e337567c2318821
 Description: jftui is a minimalistic, lightweight C99 command line client for the open source Jellyfin media server.
 Homepage: https://github.com/Aanok/jftui
 
@@ -10460,11 +10578,11 @@ Maintainer: Krishna Kanhaiya @kcubeterm
 Architecture: arm
 Version: 0.25.21
 Filename: pool/main/k/k9s/k9s_0.25.21_arm.deb
-Size: 14998952
-MD5sum: f378674f3798f839ea0ad12fdd7a31e6
-SHA1: 7f37c365a515d53801047932a8aae8197db7bd58
-SHA256: f9f4cf21938eca1d660112a7309df21becadcbb565bb13244ae0ccd2ae5866fa
-SHA512: e52a0553066e06d0952f18b6484ca384525019f823b468a20f498ba4b1e886c1dc73f5a590674688636904aaea207daaf12d5b94f1e72d81dccc965f9e3e6e3c
+Size: 15000544
+MD5sum: 262b72c4aaf83874ad21f88d447ebaae
+SHA1: e6160c56f2bc631a5f5db06b833faed81bd3b9a6
+SHA256: c90dc48b52e50f689b091275dbcc1f1873ad7087950f4180e57d8f1178ffa704
+SHA512: e262093aa67eafcfd72110ace47810c9eb6f57fe0de2cd00e99549ffc39c8b5a85778510d0bc60521108c42c5a992c938c5a53d1811f907781433fa4144ef816
 Description: Kubernetes CLI To Manage Your Clusters In Style!
 Homepage: https://k9scli.io
 
@@ -15877,6 +15995,22 @@ SHA512: 35e1f46f87a47cacabfa06c7616a3afb926f819b8a53b48e062b4fa7920deced991f1436
 Description: Collection of libraries providing APIs to netlink protocol based Linux kernel interfaces
 Homepage: https://github.com/thom311/libnl
 
+Package: libnl
+Installed-Size: 1344
+Maintainer: @termux
+Architecture: arm
+Version: 3.6.0
+Replaces: libnl-dev
+Breaks: libnl-dev
+Filename: pool/main/libn/libnl/libnl_3.6.0_arm.deb
+Size: 248748
+MD5sum: 7fb7afcaf67c90dacb39b084a8aa38ec
+SHA1: 3a2fb0800784327d419719b8cde05583f3badd26
+SHA256: 5de1bfe8a1887e5c32aefb31165b39fa5a1c0bf64ff4c4ee9642749c6c790731
+SHA512: c28854d74cae44e9b83cf68ea270bd075062b9ce3bd69f3084ad8995e942ba9dacb67c35b97c36a369e3c136a65e9ab65623cfc7b9fb061ea9502da8e57c2f67
+Description: Collection of libraries providing APIs to netlink protocol based Linux kernel interfaces
+Homepage: https://github.com/thom311/libnl
+
 Package: libnl-static
 Installed-Size: 1216
 Maintainer: @termux
@@ -15889,6 +16023,21 @@ MD5sum: 6905f68799c66fb62065bdbd4ae62e67
 SHA1: 775211d6527b5612306cee8f173f26d619a641d4
 SHA256: 55505e3affb6ce5fe140de96c55a83df8792e546fbb18942ff3dc3055577c7ad
 SHA512: bfb0904e93448e77e68000253403453da610e74eecfa2fded3885ef27bb18f39a4a36fb4d51235bdb162c59b8c43bcce260e7c7b9dad3c1590bc245bcc1a559b
+Description: Static libraries for libnl
+Homepage: https://github.com/thom311/libnl
+
+Package: libnl-static
+Installed-Size: 1212
+Maintainer: @termux
+Architecture: arm
+Version: 3.6.0
+Depends: libnl (= 3.6.0)
+Filename: pool/main/libn/libnl-static/libnl-static_3.6.0_arm.deb
+Size: 267328
+MD5sum: c51a74dabf25c1be838b8617d8811bca
+SHA1: b4bfc42de5660a7bae9a940ca7e7d262044ca3ef
+SHA256: a029f9eaf8d5fa4518b0d91d497fd13b12d185955c095c00f4aaa6462221b0ca
+SHA512: 866e303f9ed5f69811f4bbfeb9064a5c49a9d900947d5208ae06f5fa8c386eea70c1507aef7d95c4f193c07aa80c05d0c6dd0716e5ef29458ada3a6095713551
 Description: Static libraries for libnl
 Homepage: https://github.com/thom311/libnl
 
@@ -16067,11 +16216,11 @@ Maintainer: @termux
 Architecture: arm
 Version: 3.2.10
 Filename: pool/main/libo/libolm/libolm_3.2.10_arm.deb
-Size: 102328
-MD5sum: 56e5d8cd1b0d24aeb3123728d297e156
-SHA1: 88125974f4c876626ae880edf9b894acbea329df
-SHA256: b0523fa4d6a480f0187b7259254f9a58020b8aac13ed59f21a7642eeb00cfa07
-SHA512: 57603d72dc072a2f5d573daba17a3123fcc318d5392c4adfe9f8096b690f926f1707667bca7cecd386056742751d55d2f5135cc333b964b3e47e5816c05db47c
+Size: 102464
+MD5sum: 8c471746fe0809ee0cafde31a8a8838e
+SHA1: 13c82bd5365e75b3964338925cfc0eae225064d3
+SHA256: 4de11c615388f0c2a912bdb23ea9f92bdf82e16b736292729dbf31e9d5d93713
+SHA512: cd4074e93b3ceced2a765f4e5f91e6784ed4ab18ada4f8e592e16fd579b969caf87325ccddf6b805d037aca4f1cee34535ebab9ac5abcdaee67285c637296083
 Description: An implementation of the Double Ratchet cryptographic ratchet
 Homepage: https://matrix.org/docs/projects/other/olm/
 
@@ -17059,11 +17208,11 @@ Maintainer: @termux
 Architecture: arm
 Version: 0.10.0
 Filename: pool/main/libr/librinutils/librinutils_0.10.0_arm.deb
-Size: 6144
-MD5sum: 3931e48e83a769d1eb5781201fb14a02
-SHA1: ffffca2e0fd4642471cb17db4ed2ba0652fdd3f9
-SHA256: 4d436781f8a1336fb61a0afe427641817e4b255918ca412c44411d0a13056639
-SHA512: cae303244592785a0d7f029336e43ccc00647598e18591e29966a3d5ce89d96d7f8945dda4070e7a4f1ef5f917bd6f03154736ebe8dcf7ee76dc71ba6576f1b0
+Size: 6140
+MD5sum: a48f7f0cd226d24b7d2c8738f76c5247
+SHA1: d41edec3bdaef9c62d67edd771ddb7232dce983c
+SHA256: 93df6530c2939463f9ecb794e35aa55815d0066d48d6157f7a79443f5453d88c
+SHA512: c594b9c207befd4650278ebb0d329516e735ce92d10baa4fc679d43913438e39b9fbbdc00c221fe861eccdfb416c9ccb8b7d04a0eda474c168f691c489d00b1d
 Description: A C11 / gnu11 utilities C library
 Homepage: https://github.com/shlomif/rinutils
 
@@ -20445,11 +20594,11 @@ Maintainer: Krishna Kanhaiya @kcubeterm
 Architecture: arm
 Version: 0.22.0
 Filename: pool/main/l/lsd/lsd_0.22.0_arm.deb
-Size: 580088
-MD5sum: 941b935aa92ca604d5f518fcecf439d4
-SHA1: 5170cacbbdaac55abaec8b8b6135bac6a48e3e95
-SHA256: a89ab14be2e3432c59062f0b54032f43c726e1173174d4a71e1d7634ac3ae76f
-SHA512: 5d7f3a09f1168fa96f3e8d9eb76502f7a2963829ca99480c53ec87a9332599f6f4c7c66042fa987e5fd6e3dde6ba406c0b5e767662a3233c7d813768e97ea82f
+Size: 580092
+MD5sum: 3085a5ebd70a7e4fd982b42f62f35e45
+SHA1: 096000c5b1d2c3d3c74fe57d54fcbb450d6ae312
+SHA256: 17876afa93e9865fc737608f6e102e7c48fc41c4ef6e4d14aa3b6df940f63c98
+SHA512: f2eee1525bed8d90e0111c994b4400f6401d5b4f41b235958b552d41a38303d3017b366b506d759c87847081769b27074b4c91c69401f77186aa15fd6b2ffde4
 Description: Next gen ls command
 Homepage: https://github.com/Peltoche/lsd
 
@@ -20461,10 +20610,10 @@ Version: 1.8
 Depends: bash
 Filename: pool/main/l/lsix/lsix_1.8_all.deb
 Size: 5716
-MD5sum: d88afb0a6563ce8df8da8d66eccb320b
-SHA1: 0f6fe56b79029f19c2bf26b088e21671d3d33c4b
-SHA256: 1806e1cb8e305df243b11884dedd6d548728365486e37e25feb973db521d8642
-SHA512: 7b46b77a5008e23fd602e2d23af8e25e62e706769f7b4e4937952401019d4ad2306bd4bc560e9e3ed5c07dcff3024c99d69759dcc429efaa74b741cf63fd2beb
+MD5sum: fe8039dea62275bb1aeb17aeaa4d05c8
+SHA1: 125317bf6f40992aca85b9641940d621f82068fd
+SHA256: a0493caea9145a2f7d1b5e2e5181b6458a4e610e6e13b6682d434bd63cd20605
+SHA512: c965718f4a50f6d2c9526981abfe1f4fa713ab94632f4ebe5babb3f9ace36f1466ec4e21436da71d2d1e589195482fbe0015a756a5fda827bcf2012e78dcde20
 Description: Shows thumbnails in terminal using sixel graphics
 Homepage: https://github.com/hackerb9/lsix
 
@@ -20510,6 +20659,21 @@ MD5sum: 3f3703513eb041614cd01f914886b007
 SHA1: b2bae245a3a77315e8aba9329f350de1261dbeab
 SHA256: 4ddaa24e339b86da957ecc99d5b550b983502e0f576fc65ef4d30e5c53d91d13
 SHA512: 36c24559ca2c55b82621436d9cd01714166083a69b0f4deb74258b951b051eff7bf0ec8411fcc0fb9639b7d8d6fb0f49fe3da6c036bbb405a61dd2e2f3fee3b0
+Description: Sumneko Lua Language Server coded in Lua
+Homepage: https://github.com/sumneko/lua-language-server
+
+Package: lua-language-server
+Installed-Size: 8228
+Maintainer: Aditya Alok <alok@termux.org>
+Architecture: arm
+Version: 3.4.1
+Depends: libandroid-spawn
+Filename: pool/main/l/lua-language-server/lua-language-server_3.4.1_arm.deb
+Size: 1370824
+MD5sum: a3d5ee60e3e94cbe8a034beb2347e4d1
+SHA1: d15b1a675bc4a07d3f27d7d34f283cf657b58601
+SHA256: 520ad357e138fea2a332699ee3bd33688d0fdc67494f1a596703d94d565f0448
+SHA512: aa04768741c47cba68af6f7a8220a2aed85aa1b25e8d5d5faa1bac2361c1820dbae8a64075ddb65e7bd30fa3d577115cf6ebb6d1b87d764163958229af4ce5f6
 Description: Sumneko Lua Language Server coded in Lua
 Homepage: https://github.com/sumneko/lua-language-server
 
@@ -21166,6 +21330,20 @@ SHA512: 29e0d0a3c1f14e773ae305ef3a7bdd4e921dea055e49ffde8abb9b035bd6b49babb0ca70
 Description: A preprocessor for mdbook to add a open-on-github link on every page
 Homepage: https://github.com/badboy/mdbook-open-on-gh
 
+Package: mdbook-open-on-gh
+Installed-Size: 1292
+Maintainer: @termux
+Architecture: arm
+Version: 2.1.0
+Filename: pool/main/m/mdbook-open-on-gh/mdbook-open-on-gh_2.1.0_arm.deb
+Size: 509520
+MD5sum: 6fa022a4f254d5f1b3a6b697ab5eb2e2
+SHA1: e286e2da94a31a3a5f6d840199fa44aa038699fc
+SHA256: aed8c88994f5343db9efa714b938fe0043d77f7c6f1ee1b244802d8ea8f2bad0
+SHA512: 7c0d841501ec0bc4ab64ed6c05c4e057abbf9b439b330f68f33e76d127c82379bd8b7be1b3788745ed8e5ae748bba2ff6f6e669f565548351b1d533fb47179fd
+Description: A preprocessor for mdbook to add a open-on-github link on every page
+Homepage: https://github.com/badboy/mdbook-open-on-gh
+
 Package: mdbook-plantuml
 Installed-Size: 3188
 Maintainer: @termux
@@ -21368,11 +21546,11 @@ Architecture: arm
 Version: 20220614
 Depends: libbsd, ncurses
 Filename: pool/main/m/mg/mg_20220614_arm.deb
-Size: 71676
-MD5sum: ca971f79579c0b099f0cc09e63e7be1a
-SHA1: c267461471aa28872c796720e47c0df78a1a8ab2
-SHA256: b87d91ab8c5d38eafc2dc5858289a24061497c32ee6bbbf87f8d2b4d87f616fc
-SHA512: 65aead7ab07eced1961932a1a013bee90b7a7d25c4a2da994aee75d0ee4a092e5a000221d732207517f719d734b8f831d02f259d9b9b17a034af3181a6619c6b
+Size: 71680
+MD5sum: b3830917d389450f564c5b284432b16d
+SHA1: 0a62e0d9b857242774ef0ef7263dfbb6e1a0a450
+SHA256: fe048bee1a6de7438e22e2a3cd65f7428d8321e77af760669d8ba9c5445975eb
+SHA512: b8367e814007c2d3ce013138a89cb268fc6dc3f57c84201c3031c12e65c0c4419c7bb80d1e3b9193456e6e5d8e238af4bb890c71e2cb9682a743f6aab8c90a2a
 Description: microscopic GNU Emacs-style editor
 Homepage: https://github.com/hboetes/mg
 
@@ -21415,6 +21593,20 @@ MD5sum: 32f1dd23b5fd15198e478b80841868e8
 SHA1: bf5d6f672163ead9581f9d82da2c72f84f6dcc0d
 SHA256: 8f77144018dca5a3e330095b551877a5e5a17d73016b88b77a8a94a38bb5e1e9
 SHA512: 1ff72e4fbdec14d79cb935ea1b815231f8400c56ab2befa9f634f24cc7cd3a482b8f9c30d44d2523da90dc5c30d256204259947eb664ec63453e6b4d440ae241
+Description: Like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON
+Homepage: https://miller.readthedocs.io/
+
+Package: miller
+Installed-Size: 22600
+Maintainer: @termux
+Architecture: arm
+Version: 6.2.0
+Filename: pool/main/m/miller/miller_6.2.0_arm.deb
+Size: 2702660
+MD5sum: f7b6d138cf9b1aae929c21fbcd612d9a
+SHA1: 68370e795dcc767c749946a13d3189f452084711
+SHA256: b582eeb3223f4f13f7d2b0e38a8811afd5d354d53fa0fdfb03740df6e26dbd47
+SHA512: 7e4fb1e23531074465073f290c4d40b518180e1649aa7ffa3182a4d48cc964442383b75127fce1eb037eab0136e0b796b21c182aed140d8e87d0039a786209b4
 Description: Like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON
 Homepage: https://miller.readthedocs.io/
 
@@ -21915,6 +22107,21 @@ SHA512: 27fcafbb7bfc649715861270c6d31f1acd981b5324ec3759657a9fe9200445704fc8c218
 Description: Music player daemon
 Homepage: https://www.musicpd.org
 
+Package: mpd
+Installed-Size: 2252
+Maintainer: @termux
+Architecture: arm
+Version: 0.23.7-1
+Depends: dbus, ffmpeg, game-music-emu, libao, libbz2, libc++, libcurl, libexpat, libflac, libicu, libid3tag, libmad, libmp3lame, libmpdclient, libnfs, libogg, libopus, libsndfile, libsoxr, libsqlite, libvorbis, openal-soft, pulseaudio, zlib
+Filename: pool/main/m/mpd/mpd_0.23.7-1_arm.deb
+Size: 616564
+MD5sum: 7370c3215f18b074baddb5b6f44b2dc0
+SHA1: 915085b0d4f445bca021b4808c6fded93a182123
+SHA256: 5aa85031b4749ef05c03d591c06ee6f905ea04d9bdb28ffceacdcbcac3fd8d83
+SHA512: 7270fe8d4e6478d22634188ac016772185cee2a55f6644bfa0a04a29d6d5b62357c544b7d8b906add0c541e6a2539f0ab198d17bc73aac437b5f7fab65a017d0
+Description: Music player daemon
+Homepage: https://www.musicpd.org
+
 Package: mpdscribble
 Installed-Size: 204
 Maintainer: Henrik Grimler @Grimler91
@@ -22306,6 +22513,20 @@ SHA512: ecfda301b734f89f24ed586edbc5eb56d7e9298c1ee4effe4dcedc15586d1c5399b2bab0
 Description: An offline tool for querying IP geographic information and CDN provider.
 Homepage: https://github.com/zu1k/nali
 
+Package: nali
+Installed-Size: 8576
+Maintainer: @termux
+Architecture: arm
+Version: 0.4.7
+Filename: pool/main/n/nali/nali_0.4.7_arm.deb
+Size: 2512472
+MD5sum: 639e1f1119a242b392b23c0541edc604
+SHA1: c617c0b62cc5d3a5d88af2a0fc752b3d8ad2beb3
+SHA256: 65b56585d4b5b418caab09b6e80b0a2ccc0febdce8ceada223444e06bfc0797f
+SHA512: 68f2db632f7e43ae77631886e6f0861fc6527ba8e36536f8e703efc5968f293a114e8d1830bb1bb6c5a8bbbd6416df5ba69c5d8bbf38acadab148447f8ea21b9
+Description: An offline tool for querying IP geographic information and CDN provider.
+Homepage: https://github.com/zu1k/nali
+
 Package: nano
 Installed-Size: 792
 Maintainer: @termux
@@ -22664,6 +22885,54 @@ MD5sum: 6bf9b7e4ec2a120fecc223e973f89ae5
 SHA1: 82a7da83b72bc356c1e6b54100b56ea9b0e38c54
 SHA256: 31cdcdd3256356358b0e6258ba939f9cf553490eb69353e621093a0acc98792e
 SHA512: 4cb0fa005e23c9e0b1cc6d7e68eecf0221b0683deb658c8e0ec37809fed774b4a2fb89ba8eabc3a0cb6d675df51a6be2a816d7932ebcb63997dea682a86be387
+Description: Ambitious Vim-fork focused on extensibility and agility (nvim-nightly)
+Homepage: https://neovim.io
+
+Package: neovim-nightly
+Installed-Size: 23024
+Maintainer: Aditya Alok <alok@termux.org>
+Architecture: arm
+Version: 0.8.0-dev+572-g6b72ee1f1-0
+Depends: libiconv, libuv, luv, libmsgpack, libandroid-support, libvterm, libtermkey, libluajit, libunibilium, libtreesitter
+Conflicts: neovim
+Filename: pool/main/n/neovim-nightly/neovim-nightly_0.8.0-dev+572-g6b72ee1f1-0_arm.deb
+Size: 4680232
+MD5sum: 86d8f487f13f76fe4c737214d5c89a86
+SHA1: 6ff958b1e81575af43540d5c7807923b3abb2de7
+SHA256: d0bb7d55d8290fbc9c5dd866a08ba3122c400a2cf642c463d0e42c8b0dd580c3
+SHA512: 08ca0139bcf5eb0e7073155106793cabfcf809df817ee1c696bcf7926d58337933f4e5ca98a04cc9c1707429706bd2c1a5c16146afc3ab572525e2b7c5c65e89
+Description: Ambitious Vim-fork focused on extensibility and agility (nvim-nightly)
+Homepage: https://neovim.io
+
+Package: neovim-nightly
+Installed-Size: 23004
+Maintainer: Aditya Alok <alok@termux.org>
+Architecture: arm
+Version: 0.8.0-dev+562-g606af7887-0
+Depends: libiconv, libuv, luv, libmsgpack, libandroid-support, libvterm, libtermkey, libluajit, libunibilium, libtreesitter
+Conflicts: neovim
+Filename: pool/main/n/neovim-nightly/neovim-nightly_0.8.0-dev+562-g606af7887-0_arm.deb
+Size: 4678500
+MD5sum: 6a02fa13d314c6a33bf0a1e19260382e
+SHA1: 0cee17f6954ff31a79c06103825658d37aaf4cb1
+SHA256: 34d374d56ec48b3c2a189b9cb3f90f69038fb73cc8882b9f2491ba4433fa673f
+SHA512: 79e1c19887453bc28b3d3aeba3fe50ae434ab272a1eabdf294d1daa6d8e9a69f4c01c43a5e5b6c8448ca071847bef69154773ba0d464ca02e966cba9f493cace
+Description: Ambitious Vim-fork focused on extensibility and agility (nvim-nightly)
+Homepage: https://neovim.io
+
+Package: neovim-nightly
+Installed-Size: 22996
+Maintainer: Aditya Alok <alok@termux.org>
+Architecture: arm
+Version: 0.8.0-dev+555-gd07a39c54-0
+Depends: libiconv, libuv, luv, libmsgpack, libandroid-support, libvterm, libtermkey, libluajit, libunibilium, libtreesitter
+Conflicts: neovim
+Filename: pool/main/n/neovim-nightly/neovim-nightly_0.8.0-dev+555-gd07a39c54-0_arm.deb
+Size: 4678124
+MD5sum: a0012752c448fc98a2d6c1ef2e947c1c
+SHA1: 1c148911fc7e9bc0ee22389a980bde5ebc76f0eb
+SHA256: 1fbe6acf2bc994f4b8745b078b25b56ce8d65e66f23b3d4c593d44d71ac99fdb
+SHA512: 037a199d5acf37e92866a0afac31f239d0a13412b95ff8351430484f0e4804dc238cc2d50e32d205af7ef6f961f2b055816a25f15f88f749b06d6f7e31292b4a
 Description: Ambitious Vim-fork focused on extensibility and agility (nvim-nightly)
 Homepage: https://neovim.io
 
@@ -24381,10 +24650,10 @@ Architecture: all
 Version: 2020.10.27
 Filename: pool/main/p/pb/pb_2020.10.27_all.deb
 Size: 3632
-MD5sum: f2f88d90e25465525b3c8394ea06c8d4
-SHA1: 8db98b0d07c69cd428ffc6fddfe6a189b22a1e9c
-SHA256: 2c36079e266efe506411ce2e7c07586d2f423698916c9d32f1e37444c5ea6dc8
-SHA512: 15edbf36d1f995f80d9a8d375a5f8a6ebaf46120e06bc68db4709ec74964fe2f230c017ce54a80cfc07b931b80fb006c7e48c283cdafea1cc156635f4a2c5371
+MD5sum: b6e943d6828f6d4891555e876bc34411
+SHA1: 09294240e94f09d872bd6d20be2e16e795063bea
+SHA256: b81a459a10229d83a16441b5c76ba8b82d9a495501d5132484c25452cb1f3abf
+SHA512: a0c6908fc17336070abb44b554e24e056d2ee458c65486d6d37e5b277a334643b61444aba10efd25938f8c3bbd21eb93b640c01cccbdc82bff26eb5e476b0b95
 Description: A helper utility for using 0x0 pastebin services
 Homepage: https://tildegit.org/tomasino/pb
 
@@ -24981,11 +25250,11 @@ Maintainer: @termux
 Architecture: arm
 Version: 0.2.4
 Filename: pool/main/p/pingme/pingme_0.2.4_arm.deb
-Size: 3247284
-MD5sum: 6aa311ca6d69f1d70afc7606893ec0da
-SHA1: 088855e7e22b34be537d93be0f524976ea48e000
-SHA256: e1ce0e5ce76ae59093e52ce4216361d68b56bafe018239ecb69741d86f0c2c0d
-SHA512: f5b4b52999c87f722b1f9a05ebf61ba067c464ea3c6aa1cf7f276d6959e45712cbfcd5aa634a19bd7ddb150ef9c55f9e8d66469b719575b7544a84d221a1f626
+Size: 3247868
+MD5sum: 40c7d37bbcd84c233e18da4b10eb514b
+SHA1: 0046900b5d61f27ba23c28b2a44dc47587c2a968
+SHA256: e64ffe8c976f98c67ef5ccbd09bcfe89909148cf09c5c2937c30a747f1b412d7
+SHA512: d28403b644d38c9b01a458b4344f9707d7281531b311d58cfa437b32084a52b904addcd29a54206d9abb0d0cdbcf5ccbe3fa0daa244472a6d9c1f34d1003e896
 Description: A small utility which can be called from anywhere to send a message with particular information
 Homepage: https://github.com/kha7iq/pingme
 
@@ -25571,14 +25840,14 @@ Package: proot-distro
 Installed-Size: 164
 Maintainer: @termux
 Architecture: all
-Version: 3.1.0
+Version: 3.1.1
 Depends: bash, bzip2, coreutils, curl, findutils, gzip, ncurses-utils, proot (>= 5.1.107-32), sed, tar, xz-utils
-Filename: pool/main/p/proot-distro/proot-distro_3.1.0_all.deb
-Size: 21436
-MD5sum: 6240c22474b68c77e38e362f6405afcf
-SHA1: e692121fbf9153d073d749afd91f2145976af010
-SHA256: 08c9c0510a13808cc14a2a12d129fa515e37dae46edbc879f72f5c9bdf1e1988
-SHA512: 7081aaddbf53fe8cbfb417f8c5af5bae89700f50313b88a5c3ebc8656fb0cd0d67fd23eee212f23f0d3df2c1af986329c92b2e62ae0e46558ecf1e731e0ab889
+Filename: pool/main/p/proot-distro/proot-distro_3.1.1_all.deb
+Size: 21188
+MD5sum: 0f73e381946d28652f03d84a47743e87
+SHA1: 81f1fd6c5d65f50ffcbe34cc88d0bf65b574d5ff
+SHA256: d260cdb857e329bd5d32b0ab4ea06bd7f7176e8664a59c386af52a380ef4ccb8
+SHA512: bfc6b58e95a175abb1e5d5462794f7aaf711ff36ed7d19ed0a329e2f32773fd933c8d5f6d2ec3d431da63358129ea6cecc5b457bf1daed380ae4a2424ccfebd7
 Description: Termux official utility for managing proot'ed Linux distributions
 Homepage: https://github.com/termux/proot-distro
 
@@ -26532,6 +26801,23 @@ SHA512: e83fcadeff4ee5fde495b6640dc98c04a2b73a027ddf5a7ced5f348f31c626c995282415
 Description: Advanced Hexadecimal Editor
 Homepage: https://rada.re
 
+Package: radare2
+Installed-Size: 35064
+Maintainer: @termux
+Architecture: arm
+Version: 5.7.2
+Replaces: radare2-dev
+Depends: libuv
+Breaks: radare2-dev
+Filename: pool/main/r/radare2/radare2_5.7.2_arm.deb
+Size: 6906092
+MD5sum: 26ce8742a0afed9f00cf4e2e2ceb6317
+SHA1: 030e6a1735273dea1ca4afada68fcc38a8bfba2e
+SHA256: 4ef1568b6cb688f69d320780e378b88656862bba8792dedce7416884cb44b68b
+SHA512: 26c47a99e00a66f2440b1f521af3d4184982f7742cff551fcddea77091da61cba47b15dfc89664afc6c4b7852ae7d25e81dabeb601d7fa52cce9ce795bc32592
+Description: Advanced Hexadecimal Editor
+Homepage: https://rada.re
+
 Package: radare2-static
 Installed-Size: 10228
 Maintainer: @termux
@@ -26544,6 +26830,21 @@ MD5sum: c65723a2d21c4c1507f248816a8e859f
 SHA1: 7f14f745332c3a464ab2b610faf17ac6f7c307c5
 SHA256: 2e55dd7d9008926fbb1200991177096b93ea189cb8431940604a8a453e32e033
 SHA512: ed367010186c2a80ac14db9d13e06ab9c838a122ff2da2c3395affe31d03a2f5919c950be07c975d101e7a7debc1c4a3305d4a5b0803c50187ae4a6fb896248c
+Description: Static libraries for radare2
+Homepage: https://rada.re
+
+Package: radare2-static
+Installed-Size: 10228
+Maintainer: @termux
+Architecture: arm
+Version: 5.7.2
+Depends: radare2 (= 5.7.2)
+Filename: pool/main/r/radare2-static/radare2-static_5.7.2_arm.deb
+Size: 697076
+MD5sum: 4e4d8aa4085a4ee5ec822c9c82a72189
+SHA1: 54eed5294fc89ab68387736fb79ede58c13e4f38
+SHA256: 50e254ba94a24256c61463e76d1f65f9b0100df0b7a7f725f5930697a40c387b
+SHA512: 68feb10d78fb7173469680030aee0db4b34b590b14fc601dccf346d103282ef3e562b2d83eb98216cb54a6d32f1a44e1f9cb97740cde4f9b5620eba8588b0499
 Description: Static libraries for radare2
 Homepage: https://rada.re
 
@@ -26626,11 +26927,11 @@ Maintainer: @termux
 Architecture: arm
 Version: 2022.03.23
 Filename: pool/main/r/ratt/ratt_2022.03.23_arm.deb
-Size: 2583056
-MD5sum: f456b5259f9a4900afc98e573e41cf33
-SHA1: 51ed3074ce2e3c15b9e5560a2b4ad559f37cc41f
-SHA256: feff66ad52ce2c4fe9f0404c9904e262c63a4c1b6a4fd772f6d422adf20522a3
-SHA512: 2e31daa166f2c4b79b6307a44a14de2481f357c838628d75ab15950d8ac03c26c415919092f5eb61d319539c84b8f2462f46a71c7f439a27fdea5278602b0bd7
+Size: 2582660
+MD5sum: 44525e5eeda37750865a0324dd989efb
+SHA1: 5fb30382539d1ba0a4e155f48756be5c7eccf323
+SHA256: 7a31c2a4e63a294b5d868214d65e0aad7f9f9d97ad0a5906b12d249a29c85f82
+SHA512: 3cc82292a47bc38bb5672b96914e4d06c8f118c99d0de27d95ede7c4db526eeb9a0247ab954150eb47c6c0a2d97485d1dab084b4f662c666a8c9e4500da124c9
 Description: A tool for converting websites to rss/atom feeds
 Homepage: https://git.sr.ht/~ghost08/ratt
 
@@ -26774,11 +27075,11 @@ Architecture: all
 Version: 2022.03.19
 Depends: python
 Filename: pool/main/r/rdircd/rdircd_2022.03.19_all.deb
-Size: 43660
-MD5sum: 8e456b1ec5ce6843bb2f0282e0fb1bc6
-SHA1: 7618ddffde4a29c6ce02a052afeae2ddeb1e66ff
-SHA256: d47549751fe28db8626088c7871205e94c7443bb620feeede4196d53190aa203
-SHA512: bd3e23608b76678907f98ed4c65345c3ca52cfae46517ac412998aafba539fb7f24a9f6dcd9dba2d49b9bc2aaa03c67fb5297850887f83463eb0cde08503e9c6
+Size: 43656
+MD5sum: b3ce225201d399b2024fcec96a0e2485
+SHA1: 762b97a88d08da31bc47263c53937387d7c22ab4
+SHA256: 2f624e6ba134f8d3cb5ea55e080f27ed1d6c5567c2e64925405113c7e4ee810f
+SHA512: 28b41e3b068e540e94516d460f9f79da98d025a42dac2473aea6551adf5ddfd3527c52d5dd50791083dcb7927963675d3fe657ef98397604624d44dcda85a25f
 Description: A daemon that allows using a personal Discord account through an IRC client
 Homepage: https://github.com/mk-fg/reliable-discord-client-irc-daemon
 
@@ -27583,11 +27884,11 @@ Architecture: arm
 Version: 4.14.13-1
 Depends: libbsd, libcap, libcrypt, libgnutls, libiconv, libicu, libpopt, libtalloc, libtirpc, ncurses, openssl, readline, zlib
 Filename: pool/main/s/samba/samba_4.14.13-1_arm.deb
-Size: 6628132
-MD5sum: 94f8e0d197759569e8c0f8058bae478c
-SHA1: 4ca2d359bebc3676880d001fc98a829637485c19
-SHA256: aea01a38d53a831b08b8f68b988320d6b7ed1af5ef930966fa07430309acf78f
-SHA512: 4a862aa15c036940bcc8c0c77327ec191bec3dd7e2f5d6157d3533f2caea4038914a3305f2d606f3e083216acebbf974599413e0c1d2c20775a0011273802558
+Size: 6622068
+MD5sum: 42a95586ba5a873b11e6ac1d7945ddea
+SHA1: b39d1260cd208b56a5a242918ee3d698cd35f48c
+SHA256: c26c9a72782efa7de88d50ccd5d1bf81135a99eef5a96bf57615cf776b82ec1e
+SHA512: 017a39a6b34f9ccb58b71b6745b9f135fd0fc4b608043ccd09a203a56f00e631cd8e1f85c0c363288b154500a36c5704b06d550b8653d58d5467bab69f9802c0
 Description: SMB/CIFS fileserver
 Homepage: https://www.samba.org/
 
@@ -27895,11 +28196,11 @@ Maintainer: @termux
 Architecture: arm
 Version: 2021.12.14
 Filename: pool/main/s/senpai/senpai_2021.12.14_arm.deb
-Size: 1418552
-MD5sum: cc37eed6c223e353bff366facffc7fe5
-SHA1: e79d80a04ae27fc7321213127dd103b33cfeeb59
-SHA256: 7601e287d1b4172fda1fa724933fe5231eb5ab1a3cd50c3a7962fe32a1c1ced4
-SHA512: b5c62b5e906f061f01ee9124d7a72fd54b8d0d5ecd0628eb7adfafee711973e58b0cecd9ad5d3131c57acc455f2c423dc83a8dc27a75b153c5754736b8986af5
+Size: 1419240
+MD5sum: 6083675e5052c3977def0676aab6ec17
+SHA1: 03c2b5a01887b5556252d70c8b572f3d7be9b495
+SHA256: f7cc1d50ae9cba98ef29cfd971a8a100467888a931469b11a0eaee0ba02dd7fe
+SHA512: 75c0deba573d0618146d709f6ed0d75530e8caaefd61251dd29ae073dde87eafebe8f2de401336e05de3c0a425b4b2dbe9ef102d14681266b475df3a5eaac234
 Description: An IRC client that works best with bouncers
 Homepage: https://git.sr.ht/~taiite/senpai
 
@@ -28078,6 +28379,21 @@ MD5sum: ec06a0ffe163bf152edb3d56c035d8a0
 SHA1: 548cad7e2c48b3945bc50fd1f903640617d19423
 SHA256: 01c00ecdc1268e21681db765968d172d6558e480174ae0223c4eb3283c381312
 SHA512: cc005cdb6d68f8d0d6180caf0618165349f67cd5dbc8fe9086593c4435651bcdeed7c807080fc14fe5e0a0c50d4ab6bfaa33fd637a370e89142c38f078a3b980
+Description: Implementation of a web server that can export arbitrary command line tools to a web based terminal emulator
+Homepage: https://github.com/shellinabox/shellinabox
+
+Package: shellinabox
+Installed-Size: 436
+Maintainer: Termux members @termux
+Architecture: arm
+Version: 2.20-2
+Depends: openssl, openssl-tool, termux-auth (>= 1.2), zlib
+Filename: pool/main/s/shellinabox/shellinabox_2.20-2_arm.deb
+Size: 107800
+MD5sum: 2029fbeb57f8985e1428fb30d5a6b136
+SHA1: 171046727fd4c4cf256d595006919cf31f6de765
+SHA256: 359095101c916fafe3b186b1fe78133be1d100de637e3660c7296605bd8d596e
+SHA512: c93180ebc0d489993468f82428d3e57dbf8d9dc5cf0e214a9649b150971a613294a59d5c2d7c2065bb8e3762cbb500a2e12e56344dd2734c92e03f4c64f899ab
 Description: Implementation of a web server that can export arbitrary command line tools to a web based terminal emulator
 Homepage: https://github.com/shellinabox/shellinabox
 
@@ -28280,10 +28596,10 @@ Version: 2016.01.23
 Depends: bash
 Filename: pool/main/s/slugify/slugify_2016.01.23_all.deb
 Size: 4692
-MD5sum: c28d4f581f155d197fc8fed961dbd24c
-SHA1: 1eeefacccb6e9c0896c28be6dc7f083ce1d66a2e
-SHA256: 7fd4d766be0d7a56e37f4caeb0ff2ef7fc2defed0e7bd23912c6a4e21ed9e8fe
-SHA512: 46cb9c7bb52472ad3ae7b91d54f8ea1e72723458ec4c0a03161777248b72a86b94457f42565cdfbbdb1b31af0994f75a00fdfa6c729f23e4ec32ca5a15997e63
+MD5sum: 8ce783646255568c1cde59f49e525a90
+SHA1: a52071452afdee855d6d564d0c8faeb38f3acd2e
+SHA256: 25be3476033f3f84cddcc3363b0596c4edeab8472fb470c0c3435abc141945a9
+SHA512: 53166bd9a36a4495e3aae61bc6e847f392f1ba19915555dc5feffb6ae8b0a74e3f9e187a75c5a9568191698d3c60f7308d86b62ab8b3d91c9cfb571f5137c734
 Description: Bash command that converts filenames and directories to a web friendly format.
 Homepage: https://github.com/benlinton/slugify
 
@@ -28429,11 +28745,11 @@ Maintainer: @termux
 Architecture: arm
 Version: 0.4.0
 Filename: pool/main/s/soju/soju_0.4.0_arm.deb
-Size: 6117700
-MD5sum: f05085659cc953502252602e8078bcc9
-SHA1: 30fa7c1efb0a43e44cdd7dd45f1392031a645b85
-SHA256: 43bc3f0f67b5aba037550a404123e1fe3e5aacc1393bcc679e198aa869413c02
-SHA512: 3ac657a4a0b5f01201d3997cd9b25736ea8a8b5f652eccae8b147e93f6eb69be9fd177eea412a07a1720df22a854c4c7e4c32ace0f2921c6370ea0eab9a61fd0
+Size: 6120676
+MD5sum: 00e43535693e660a0d78707b7dd34caa
+SHA1: 17af33075f6566661e568ed55e971862aced0f93
+SHA256: 27b9217a65c5ea7664a7ad14c465f03e519501f625489301b75fef1b27a1c2ca
+SHA512: 366adc9cb7b67bec01341422db2834112d1725f504b1419c47b9fffc43108bc3e2dd5c46cbb14a38149cd5f103a09a81964920e88f2da16679464e856c4f9808
 Description: A user-friendly IRC bouncer
 Homepage: https://git.sr.ht/~emersion/soju
 
@@ -29153,6 +29469,20 @@ MD5sum: 465297aaebd01f3a0170e63ae4863dfb
 SHA1: 7b3f65be15b2ddbe73c2b40bb60b9a34cce2706a
 SHA256: 4ccef9c55d2a7907a221b341178d7fd083c591461d0c5f049e0df2c5ac55083d
 SHA512: 1b9468377e040c60a608bff668c8a112d21f8cc4da9adc4dcaf099b9bda95f5fd750776e8e346ede704b2574d7cdc2d3b723da0abba2c804d9e216d820b52638
+Description: An opinionated Lua code formatter
+Homepage: https://github.com/JohnnyMorganz/StyLua
+
+Package: stylua
+Installed-Size: 2848
+Maintainer: @shadmansaleh
+Architecture: arm
+Version: 0.13.1
+Filename: pool/main/s/stylua/stylua_0.13.1_arm.deb
+Size: 1101220
+MD5sum: 8753052770fccb1c389b0e422a124c0d
+SHA1: 7410fdb1eac8652f4e8fccddf5f8acaadb42f500
+SHA256: e6e93c702cfa8e7d45354184ef0a564a041f70e18076dd0475cf5a87e976f6cf
+SHA512: 7c8848c4fa8095b0b57d67af43c4f99e8892096c6bfd1e916e0621e5b3f88f12a989d8c21e0a399c60de3c3ebe63b952a8f66fed944be10c9f113a4ca4ee7e80
 Description: An opinionated Lua code formatter
 Homepage: https://github.com/JohnnyMorganz/StyLua
 
@@ -30464,11 +30794,11 @@ Architecture: arm
 Version: 3.00-8
 Depends: libcurl, libevent, miniupnpc, openssl
 Filename: pool/main/t/transmission/transmission_3.00-8_arm.deb
-Size: 492716
-MD5sum: 092b77d2bce43109160363b3a43b1496
-SHA1: ba6e94137ec579cb53bf0360bee1cd4a8ff4951a
-SHA256: 868074ce19c1a1dc3e92ed55c8b7decc950d888d2383138245a886eb49f76844
-SHA512: f7c0699dec1a1ce413c28fa3a3ce1389a54cfbc57b101c9ff2e77d5d99c2c1434dddf6ace870f4b55e42a3592b16c74b76fd802113fde6579fea8f045ba792d3
+Size: 493272
+MD5sum: e130c61d636913f759dddf6fdf167667
+SHA1: aec47c30c07bd2a631ec0157a44238ff592e1371
+SHA256: 717d97f70ef40b26514054cccff4f132260985da1f990ac658234d25314b8f5b
+SHA512: 4e76d601548a2034877cde69d3ef98d1d14cb3afffc33c0d274872dc88e05665936d05ac5de63f9095f72a3ea4aace2e922b8ebbf7b861d394884391ec27f275
 Description: Easy, lean and powerful BitTorrent client
 Homepage: https://transmissionbt.com/
 
@@ -31441,6 +31771,23 @@ SHA512: 2d91a0d461d8251cdddf9009a9f84dcc8ec31aeaf88efa589b9a3d4e24c03a386c3a361b
 Description: Vi IMproved - enhanced vi editor
 Homepage: https://www.vim.org
 
+Package: vim
+Installed-Size: 1872
+Maintainer: @termux
+Architecture: arm
+Version: 8.2.5050
+Depends: libiconv, ncurses, vim-runtime
+Recommends: diffutils
+Conflicts: vim-python
+Filename: pool/main/v/vim/vim_8.2.5050_arm.deb
+Size: 1010956
+MD5sum: 99979fec59b4b6977304f87d3cdfea41
+SHA1: 6f10bdec8a50a1e690f6900e9a80eba8a8af14b5
+SHA256: 7b94c69b35b492fd723b607199e4a86918997f2011ae6b8b2492ccef1e1be12c
+SHA512: e9fc293f797c5418d7d945e45bc4343f1a2c56e0f68ff8bb313a8b774ed6e559565393a8d2c225a8635988681f594560cd20b1e101071b65f4fc0d92767f2161
+Description: Vi IMproved - enhanced vi editor
+Homepage: https://www.vim.org
+
 Package: vim-python
 Installed-Size: 1900
 Maintainer: @termux
@@ -31458,6 +31805,23 @@ SHA512: e9be675d9ff6c0873bc627ba01cdcaa88bf381ef653bf29d5e1c44f5f00edeb77ac8ce6e
 Description: Vi IMproved - enhanced vi editor - with python support
 Homepage: https://www.vim.org
 
+Package: vim-python
+Installed-Size: 1920
+Maintainer: @termux
+Architecture: arm
+Version: 8.2.5050
+Depends: libiconv, ncurses, vim-runtime, python
+Recommends: diffutils
+Conflicts: vim
+Filename: pool/main/v/vim-python/vim-python_8.2.5050_arm.deb
+Size: 1032852
+MD5sum: 2eb6992bb7494907d5c231fcfc194326
+SHA1: 110f33e7f6e29692703981ae8a26f32f99d6527f
+SHA256: 2639e07783fe9a989e56ddac260428f0e0a44f19af391dee2e20444fd2cdb2be
+SHA512: 3b3f75fe3b0085bcb2f369ba51122a7594f043c80f7b85e43788b2c9426361087c0a81af7987ca87d7bc6b5439d1bfdd15649524965d747a1303457e89f90a39
+Description: Vi IMproved - enhanced vi editor - with python support
+Homepage: https://www.vim.org
+
 Package: vim-runtime
 Installed-Size: 25628
 Maintainer: @termux
@@ -31469,6 +31833,20 @@ MD5sum: d5d2d2b1c79e18eb95f26bf1ca3ed6fa
 SHA1: 482a746974d946f54a9cb1998049fff0c9b97115
 SHA256: 82f1ed4d8ae1046620e61d00a8aad553d9acd4058382d89dbd83103e453b2873
 SHA512: 3bed691feaf5d82897260a2023342bbfc11d05b724ac456da66f13091bf5deb2d7114bd4c336a0ceff331ae2d23595559798e579fa49d95e3c2f1afc95232e0c
+Description: Vi IMproved - Runtime files
+Homepage: https://www.vim.org
+
+Package: vim-runtime
+Installed-Size: 25308
+Maintainer: @termux
+Architecture: all
+Version: 8.2.5050
+Filename: pool/main/v/vim-runtime/vim-runtime_8.2.5050_all.deb
+Size: 4507868
+MD5sum: 9100441e0a1a45fb6949d6b06ccfebfd
+SHA1: 83cc33646c2c23e7b24cc5e6d7505a75a1313ccd
+SHA256: 026b62ec9d4fa3a3bd2c16ab8bdbfaddcc4b229128ba4c6ca23e3841de72723a
+SHA512: 75c4d939445cede9791160c36bcea05de00d847f34ea176ca1da0c4c33bf40c650181ba194ce3ed38e89e166751951ec016c1b62e92f09cd34d2501c53070f35
 Description: Vi IMproved - Runtime files
 Homepage: https://www.vim.org
 
@@ -31650,6 +32028,20 @@ SHA512: 3d4963bd009f3a5bfacd85c12a7c562e34482f61f41412a3974dc6e8183179abd9030f86
 Description: Vulkan Header files and API registry
 Homepage: https://github.com/KhronosGroup/Vulkan-Headers
 
+Package: vulkan-headers
+Installed-Size: 17560
+Maintainer: @termux
+Architecture: all
+Version: 1.3.219
+Filename: pool/main/v/vulkan-headers/vulkan-headers_1.3.219_all.deb
+Size: 976236
+MD5sum: dbf91f391764a9ee2748a4b6132d6844
+SHA1: fe3ac0f9ef85168b24460d9bcd69ee8d3f27c97a
+SHA256: 85e739b149c9ca1b6dc1066725af8a8495615e9c3c99a0671dab8a2f36063055
+SHA512: c4fb16df9aff121547c9fea6f2b58e865f82a39cab3c6a893f3b78c7bdc19234fab22d43c81a3b12c01d925d4926132b9bc746923f48ac1c4a4a5e253daa628b
+Description: Vulkan Header files and API registry
+Homepage: https://github.com/KhronosGroup/Vulkan-Headers
+
 Package: vulkan-loader-android
 Installed-Size: 52
 Maintainer: @termux
@@ -31676,6 +32068,21 @@ MD5sum: 6fdd5ec5e61d6fdc9afee4aff3f94f37
 SHA1: a1fb2f1b6ad8fff8c1befa23c232b60b55e15239
 SHA256: 6ae37f1c6e76c548afc336d3178ca58cc2f83724fcb5c67b11b13d604a5a7382
 SHA512: 83b0766f54203023d47e11c49c5c3e5d47281f33ca1eab050d7f80a5554f86072c7e81f57dd43a63439e7e4cef7786f96c9efd844e4c46028fc8c8f359331a52
+Description: Vulkan Tools and Utilities
+Homepage: https://github.com/KhronosGroup/Vulkan-Tools
+
+Package: vulkan-tools
+Installed-Size: 584
+Maintainer: @termux
+Architecture: arm
+Version: 1.3.219
+Depends: libc++
+Filename: pool/main/v/vulkan-tools/vulkan-tools_1.3.219_arm.deb
+Size: 178616
+MD5sum: b00ca7f5367c96fe917390b27ec3e52f
+SHA1: 4f3fa54b8f9e3aaa38ad49c12e373fc274278286
+SHA256: 59c1fe7b3a748ca62d4ea1f1707706cbb5b7972390d30f437c1a3fb49bd1aaaf
+SHA512: be6dc5e714806216cba97a3422f20de8475eadaa2cde877ff8f0d1b1eead568ab87463e3bf480d084d153e41698978ffa9fa3496cf39545f4cf1b2bb0a6a3d58
 Description: Vulkan Tools and Utilities
 Homepage: https://github.com/KhronosGroup/Vulkan-Tools
 
@@ -32687,6 +33094,34 @@ MD5sum: 74fb02b0a2190131e55549c497870570
 SHA1: 0747e4242e103a5e8e9e914557b8609b6244dcf0
 SHA256: c710ea1284ef0a3a6956e3d0af8b76da32a9d1ec76137379937db4f5a93dae88
 SHA512: 7300ae032fa5e152c109c0668691822dd2af7262c50a08a14d7f09af2942b50b2466afdeb6f28296264821da391f9af67ff3db87af2fa881937c0bd80a375a60
+Description: Z3 is a theorem prover from Microsoft Research.
+Homepage: https://github.com/Z3Prover/z3
+
+Package: z3
+Installed-Size: 28068
+Maintainer: @termux
+Architecture: arm
+Version: 4.9.0
+Filename: pool/main/z/z3/z3_4.9.0_arm.deb
+Size: 10579100
+MD5sum: e91cf208e1ab047a9942ff57f8a46b24
+SHA1: f6d109a6c39040bb186f52ccc2014e5ab21cad6b
+SHA256: 1c9726e7aebaabd1c201eaa59d0b89d656308a507cd49557792f687b8935a1da
+SHA512: 454f21f6efe3c2c0fd53d7ae49567e231a25ec1657dfb35903ef37570ff6842bb3a7e8f8a73874b9dc366d82a5c3a44c35f53ad2e114e07ad1c524040fba4ffd
+Description: Z3 is a theorem prover from Microsoft Research.
+Homepage: https://github.com/Z3Prover/z3
+
+Package: z3
+Installed-Size: 27952
+Maintainer: @termux
+Architecture: arm
+Version: 4.8.17
+Filename: pool/main/z/z3/z3_4.8.17_arm.deb
+Size: 10533584
+MD5sum: fcb99e9549498a602803684b3e88b1a6
+SHA1: cefe76eeba0905640e04a15bac88776a3b879224
+SHA256: a0582595785b56ed22daf4d16c40e1446762dc1776c27b5c03760c43894f7349
+SHA512: 288abf88819cc8434b9d0d3202f3d95f043057bce3a28cfa784b8695511b3a9b6f12ddac263efd4c1ef5e86fff38ca26bc55086f3d8afe144cd55b87d1a8d41b
 Description: Z3 is a theorem prover from Microsoft Research.
 Homepage: https://github.com/Z3Prover/z3
 
