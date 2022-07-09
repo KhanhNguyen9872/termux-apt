@@ -3243,16 +3243,16 @@ Description: Roguelike adventure through dungeons filled with dangerous monsters
 Homepage: https://crawl.develz.org/
 
 Package: croc
-Installed-Size: 6364
+Installed-Size: 6500
 Maintainer: @termux
 Architecture: x86_64
-Version: 9.5.6
-Filename: pool/main/c/croc/croc_9.5.6_x86_64.deb
-Size: 1931264
-MD5sum: bc2a8db8ac74fb9e11fc4c9add4d2539
-SHA1: ec8bb81eaa6a519049019f3150a5198e5f665245
-SHA256: 6847a2435591f346d307c7e770421a4718a259c22f38aac817912ebd1745fd65
-SHA512: 4a326776899a541e176d1e912b08a8e16a53553b67f4e01ed5a85e78392c07caf349adce552294055b5fa8aef2909b17ee8417182c43edbf4f92212d56eedd5d
+Version: 9.6.0
+Filename: pool/main/c/croc/croc_9.6.0_x86_64.deb
+Size: 1969772
+MD5sum: 406a7ebe9006743c8d5201a5b5d0ab7f
+SHA1: ab1a6e6418434c06f3c0536ca7c3a850af10f86b
+SHA256: 4ae6ebb66edb4c7cfd032d64bd1ca8212712b02107f38faafdc5546af9d864ad
+SHA512: 12be434e78e0c6d6198f2177a9e260cf7a534ce2c825efe57a059e8e28bd493fb4e2dea04f33107ea31654142a73980192c34dfee1f1495829c603e194f1d84e
 Description: Easily and securely send things from one computer to another.
 Homepage: https://github.com/schollz/croc
 
@@ -5890,14 +5890,14 @@ Package: fzf
 Installed-Size: 2740
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.30.0
+Version: 0.30.0-1
 Depends: bash, findutils
-Filename: pool/main/f/fzf/fzf_0.30.0_x86_64.deb
-Size: 884692
-MD5sum: 16378d2ffc399145bc277838c803f99d
-SHA1: 17b2d4fdcf818f79aaba57f5e7e611735715f564
-SHA256: edec361cb0b458da1085b16d1212e941bd42d23d773782774c6fe9f8eaa5f8cd
-SHA512: be44d6b84bc212a96853829e5f73e4dab6d89033180914bdb86a83323d51f5bc1d293018cccc08d86a94560f6a4c681679e603e39f4c520d1e5eb9856873cbb1
+Filename: pool/main/f/fzf/fzf_0.30.0-1_x86_64.deb
+Size: 884980
+MD5sum: c4ba20b23e72b52cabef43e6461b81cf
+SHA1: 9fe9e21686f517f109ae6fa4bc9cf958bcc53640
+SHA256: a1d7dd40d51aaebcad701af572ecb82cd3d136817ce051cd3e9fcaeaf4f0a401
+SHA512: b8329ff5473ae74bcf83496d47d2b9d3619475abf456ddf0ec5fa8a72d43a2ec8cecadeaa32dcefd7e7e56d936ecc848ca8f253497b3c61b3706d786c6dfefce
 Description: Command-line fuzzy finder
 Homepage: https://github.com/junegunn/fzf
 
@@ -22047,17 +22047,17 @@ Description: Minimalist command line interface for MPD
 Homepage: https://www.musicpd.org/clients/mpc/
 
 Package: mpd
-Installed-Size: 2756
+Installed-Size: 2760
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.23.7-1
+Version: 0.23.8
 Depends: dbus, ffmpeg, game-music-emu, libao, libbz2, libc++, libcurl, libexpat, libflac, libicu, libid3tag, libmad, libmp3lame, libmpdclient, libnfs, libogg, libopus, libsndfile, libsoxr, libsqlite, libvorbis, openal-soft, pulseaudio, zlib
-Filename: pool/main/m/mpd/mpd_0.23.7-1_x86_64.deb
-Size: 698448
-MD5sum: cade31e2f87914e1d7a6bf8be9744c34
-SHA1: 8cb309dd350ae58b8ec487fff5a973a21eac6691
-SHA256: 0b8100859628907ca8c2ec07f31c82e3d1a86c68aaa5c34f1e1673fdf7271750
-SHA512: 8985de946678a1d8a8182d1ee5158418c18b4458919358ba7565a80cd33d8ff057edbe57dfa373e32fb68f081e0b9988547ffbe6eaf99b2fa9cb60759f45e9aa
+Filename: pool/main/m/mpd/mpd_0.23.8_x86_64.deb
+Size: 698756
+MD5sum: c97d6c9a756522caf6d09400a4c27b05
+SHA1: 5ff971609dd1afaadbc97be25ba3032ac321e295
+SHA256: e3ef28416b3fd72302ac5e1737b08182765598e1979d53a2836cd06f02113725
+SHA512: 37a06ec8164a1c1b05b58c4080323c52d5fb9153cd11d795b8839daf0b61ca108224a22b07bef99bd1eef27af5fb853570b4ca74cc4839c37fcd382e3b5b3d56
 Description: Music player daemon
 Homepage: https://www.musicpd.org
 
@@ -22780,6 +22780,22 @@ SHA256: a9e6c90102b64436ee808e2631f3ef6f3afa0fbda54c2f0a3f3ec75c5f8590f7
 SHA512: 634049bdb852ad441a1ff9ddb16b00ae9f80ff6ffa8f2bd2823bad3cce4edd52134187ab4c028242de833a44ca10fa0dd99478de4c03709bd66622806cb74ace
 Description: Ambitious Vim-fork focused on extensibility and agility (nvim)
 Homepage: https://neovim.io/
+
+Package: neovim-nightly
+Installed-Size: 25244
+Maintainer: Aditya Alok <alok@termux.org>
+Architecture: x86_64
+Version: 0.8.0-dev+580-g45ba2e147-0
+Depends: libiconv, libuv, luv, libmsgpack, libandroid-support, libvterm, libtermkey, libluajit, libunibilium, libtreesitter
+Conflicts: neovim
+Filename: pool/main/n/neovim-nightly/neovim-nightly_0.8.0-dev+580-g45ba2e147-0_x86_64.deb
+Size: 5173408
+MD5sum: 662094caa2ba0d67e97a0ef62db2d20a
+SHA1: 9f949d819ec71f26125310ad883cee27fbe3fb74
+SHA256: 3fdba7cbabaf8b6d2ac81a1db6f85087e7a0f10801596475de22b9310e15abaa
+SHA512: dcb58e5a7ac0fb9cffb31cbcff10230183c2501da2df34d442d72c30e63fdf340a6400ea3cd8d0e65274e4af7d9f3dfa2688ec91240c2ed90f2c1af410bc82b9
+Description: Ambitious Vim-fork focused on extensibility and agility (nvim-nightly)
+Homepage: https://neovim.io
 
 Package: neovim-nightly
 Installed-Size: 25244
